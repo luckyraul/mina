@@ -1,5 +1,6 @@
 require 'mina/default'
 
+set :relative_symlinks, false
 set :releases_path, -> { "#{fetch(:deploy_to)}/releases" }
 set :shared_path, -> { "#{fetch(:deploy_to)}/shared" }
 set :current_path, -> { "#{fetch(:deploy_to)}/current" }
